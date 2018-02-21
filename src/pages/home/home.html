@@ -1,0 +1,57 @@
+<ion-header>
+  <ion-navbar color="primary">
+    <ion-title></ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content class="tutorial-page" color="dark">
+  <ion-card class="card">
+    <img  src="./assets/imgs/holhos-logo.png">
+    <p>
+        Bem vindo ao app do H.Olhos!
+    </p>
+
+    <p>
+      Nele você pode agendar uma consulta, comprar lentes e entrar em contado com a nossa equipe.
+    </p>
+
+  </ion-card>
+
+  <ion-card>
+
+    <ion-grid no-padding>
+      <ion-row>
+        <ion-col>
+          <button ion-item (click)='bookmarksSelected();'>
+            <ion-icon name="bookmarks" color="primary" item-start></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-item (click)='medkitSelected();'>
+            <ion-icon name="medkit" color="primary" item-start></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-item (click)='discSelected();'>
+            <ion-icon name="eye" color="primary" item-start></ion-icon>
+          </button>
+        </ion-col>
+        <ion-col>
+          <button ion-item (click)='mapSelected();'>
+            <ion-icon name="map" color="primary" item-start></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row class="linha-textos" padding-bottom>
+        <ion-col><ion-badge>Agendar</ion-badge></ion-col>
+        <ion-col><ion-badge>Emergência</ion-badge></ion-col>
+        <ion-col><ion-badge>Lentes</ion-badge></ion-col>
+        <ion-col><ion-badge>Endereço</ion-badge></ion-col>
+      </ion-row>
+
+    </ion-grid>
+
+  </ion-card>
+ 
+</ion-content>

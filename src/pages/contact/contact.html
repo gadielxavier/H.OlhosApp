@@ -1,0 +1,45 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Lentes de Contato
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+<ion-content class=" cards-bg">
+
+  <ion-card>
+
+     <ion-card-header>
+      Faça uma encomenda.
+    </ion-card-header>
+
+    <img src="./assets/imgs/lentes-de-contato.jpg">
+  </ion-card>
+
+  <ion-card class="cards-list-demo">
+    <ion-card-header>
+      Entre em contato com <br>
+      umas de nossas vendedoras.
+    </ion-card-header>
+
+
+    <ion-list>
+      <button ion-item (click)='whatsappSelected();'>
+        <ion-icon name='logo-whatsapp' item-start></ion-icon>
+        WhatsApp
+      </button>
+
+      <button ion-item (click)='facebookSelected();'>
+        <ion-icon name='logo-facebook' item-start></ion-icon>
+        Facebook
+      </button> 
+
+       <button ion-item>
+        <ion-icon name='call' item-start></ion-icon>
+        Telefone
+      </button>
+
+    </ion-list>
+  </ion-card>
+
+</ion-content>
