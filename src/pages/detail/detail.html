@@ -6,27 +6,37 @@
 -->
 <ion-header>
 
-  <ion-navbar>
-    <ion-title></ion-title>
+  <ion-navbar color="primary">
+    <ion-title>Endereço</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
-<ion-content>
-	<ion-card class="cards-list-demo">
-  	<ion-card-header>
-  		Nosso endereço
-  	</ion-card-header>
+<ion-content class="address">
 
-    <img src="./assets/imgs/edificio.jpg">
 
-  	<button ion-item (click)='mapSelected();'>
-        <ion-icon name='pin' item-start></ion-icon>
-        <p>Av. Getúlio Vargas, 2525</p>
-        <p>Centro, Feira de Santana - BA</p>
-    </button>
+  <img src="./assets/imgs/edificio.jpg">
 
-  </ion-card>
+
+  <div padding-top>
+
+    <ion-grid padding-top>
+      <ion-row>
+        <ion-col text-center>
+          <button ion-button icon-only large round outline color="light" (click)='mapSelected();'>
+            <ion-icon name="pin"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
+
+      <ion-row>
+        <ion-col text-center>
+          <p ion-text color="light">Av. Getúlio Vargas, 2525<br>Centro, Feira de Santana - BA</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
+  </div>
 
 </ion-content>

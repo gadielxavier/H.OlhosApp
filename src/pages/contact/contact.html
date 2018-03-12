@@ -1,45 +1,72 @@
-<ion-header>
-  <ion-navbar>
-    <ion-title>
-      Lentes de Contato
-    </ion-title>
-  </ion-navbar>
-</ion-header>
-<ion-content class=" cards-bg">
+  <ion-header>
+    <ion-navbar color="primary">
+      <ion-title>
+        Lentes de Contato
+      </ion-title>
+    </ion-navbar>
+  </ion-header>
 
-  <ion-card>
 
-     <ion-card-header>
-      Faça uma encomenda.
-    </ion-card-header>
+  <ion-content class="lenses">
 
     <img src="./assets/imgs/lentes-de-contato.jpg">
-  </ion-card>
-
-  <ion-card class="cards-list-demo">
-    <ion-card-header>
-      Entre em contato com <br>
-      umas de nossas vendedoras.
-    </ion-card-header>
-
 
     <ion-list>
-      <button ion-item (click)='whatsappSelected();'>
-        <ion-icon name='logo-whatsapp' item-start></ion-icon>
-        WhatsApp
-      </button>
+      <ion-item color="dark">
+        <ion-label>Lentes</ion-label>
+        <ion-select [(ngModel)]="lentes" cancelText="Cancelar" alert-input-placeholder-color="dark">
+          <ion-option value="nes">NES</ion-option>
+          <ion-option value="n64">Nintendo64</ion-option>
+          <ion-option value="ps">PlayStation</ion-option>
+          <ion-option value="genesis">Sega Genesis</ion-option>
+          <ion-option value="saturn">Sega Saturn</ion-option>
+          <ion-option value="snes">SNES</ion-option>
+        </ion-select>
+      </ion-item>
 
-      <button ion-item (click)='facebookSelected();'>
-        <ion-icon name='logo-facebook' item-start></ion-icon>
-        Facebook
-      </button> 
-
-       <button ion-item>
-        <ion-icon name='call' item-start></ion-icon>
-        Telefone
-      </button>
-
+      <ion-item color="dark">
+        <ion-label>Duração</ion-label>
+        <ion-select [(ngModel)]="duracao">
+          <ion-option value="nes">Diária</ion-option>
+          <ion-option value="n64">Quinzenal</ion-option>
+          <ion-option value="ps">Anual</ion-option>
+        </ion-select>
+      </ion-item>
     </ion-list>
-  </ion-card>
 
-</ion-content>
+    <div padding color="dark">
+      <button ion-button color="primary" block>Encomendar</button>
+    </div>
+
+    <!-- 
+
+    <ion-list>
+      <ion-item>
+        <button ion-item (click)='whatsappSelected();'   color="light">
+          <ion-icon name='logo-whatsapp' item-start></ion-icon>
+          <h2>Entre em contato</h2>
+          <p>Equipe de lente de contato</p>
+        </button>
+      </ion-item>
+    </ion-list>
+
+    -->
+
+    <ion-grid>
+    <ion-row justify-content-center>
+      <ion-col text-center>
+         <button ion-button icon-only large round outline color="light" (click)=' whatsappSelected();'>
+          <ion-icon name="logo-whatsapp"></ion-icon>
+        </button>
+      </ion-col>
+    </ion-row>
+
+    <ion-row justify-content-center>
+      <ion-col text-center>
+        <p ion-text color="light">Entre em contato com a<br>nossa equipe de lentes de contato</p>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+  </ion-content>

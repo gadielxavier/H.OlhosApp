@@ -12,7 +12,7 @@ export class ContactPage {
   }
 
   whatsappSelected(){
-  	window.open('https://api.whatsapp.com/send?phone=5575999166868');
+  	window.open('https://api.whatsapp.com/send?phone=5575999539344');
   }
 
   facebookSelected(){

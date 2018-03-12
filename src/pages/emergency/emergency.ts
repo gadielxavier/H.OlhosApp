@@ -2,7 +2,7 @@ import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 /**
- * Generated class for the DetailPage page.
+ * Generated class for the EmergencyPage page.
  *
  * See https://ionicframework.com/docs/components/#navigation for more info on
  * Ionic pages and navigation.
@@ -10,16 +10,16 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 
 @IonicPage()
 @Component({
-  selector: 'page-detail',
-  templateUrl: 'detail.html',
+  selector: 'page-emergency',
+  templateUrl: 'emergency.html',
 })
-export class DetailPage {
+export class EmergencyPage {
 
   constructor(public navCtrl: NavController, public navParams: NavParams) {
   }
 
-  mapSelected(){
-  	window.open('geo:-12.256983,-38.941197');
+  ionViewDidLoad() {
+    console.log('ionViewDidLoad EmergencyPage');
   }
 
 }

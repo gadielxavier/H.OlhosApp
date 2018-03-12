@@ -1,7 +1,7 @@
 <ion-header>
-  <ion-navbar>
+  <ion-navbar color="primary">
     <ion-title>
-      Consulta
+      Pré Consulta
     </ion-title>
   </ion-navbar>
 </ion-header>
@@ -26,7 +26,7 @@
       <ion-input type="number" placeholder="Idade"></ion-input>
     </ion-item>
 
-   <ion-item>
+    <ion-item>
       <ion-label>Data</ion-label>
       <ion-datetime displayFormat="DD/MM/YYYY" min="2018" max="2020-10-31" [(ngModel)]="event.month">
       </ion-datetime>
@@ -40,7 +40,9 @@
   </ion-list>
 
   <div padding>
-    <button ion-button color="primary" block>Agendar</button>
+    <button ion-button color="primary" block (click)=' showAlert();'> 
+      Agendar
+    </button>
   </div>
 
 </ion-content>
