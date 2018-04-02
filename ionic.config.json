@@ -1,6 +1,6 @@
 {
   "name": "H.OlhosApp",
-  "app_id": "",
+  "app_id": "457befd8",
   "type": "ionic-angular",
   "integrations": {
     "cordova": {}

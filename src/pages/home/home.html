@@ -7,51 +7,47 @@
 <ion-content class="tutorial-page" color="dark">
   <ion-card class="card">
     <img  src="./assets/imgs/holhos-logo.png">
-    <p>
-        Bem vindo ao app do H.Olhos!
-    </p>
-
-    <p>
-      Nele você pode agendar uma consulta, comprar lentes e entrar em contado com a nossa equipe.
-    </p>
-
   </ion-card>
 
-  <ion-card>
+ <ion-grid padding-top>
+    <ion-row>
+      <ion-col text-center width-33>
+        <button ion-button icon-only round outline (click)='bookmarksSelected();'>
+          <ion-icon name="ios-bookmarks"></ion-icon>
+        </button>
+        <br><ion-badge>Agendar</ion-badge>
+      </ion-col>
+      <ion-col text-center width-33>
+        <button ion-button icon-only round outline (click)='medkitSelected();'>
+          <ion-icon name="medkit"></ion-icon>
+        </button>
+        <br><ion-badge>Emergência</ion-badge>
+      </ion-col>
+      <ion-col text-center width-33>
+        <button ion-button icon-only round outline (click)='eyeSelected();'>
+          <ion-icon name="ios-eye"></ion-icon>
+        </button>
+        <br><ion-badge>Lentes</ion-badge>
+      </ion-col>
+      <ion-col text-center width-33>
+        <button ion-button icon-only round outline (click)='contactsSelected();'>
+          <ion-icon name="md-contacts"></ion-icon>
+        </button>
+        <br><label><b>Equipe</b></label>
+      </ion-col>
+      <ion-col text-center width-33>
+        <button ion-button icon-only round outline (click)='helpSelected();'>
+          <ion-icon name="md-help"></ion-icon>
+        </button>
+        <br><label><b>Dúvidas</b></label>
+      </ion-col>
+      <ion-col text-center width-33>
+        <button ion-button icon-only round outline color="black" (click)='mapSelected();'>
+          <ion-icon name="ios-map" color="black"></ion-icon>
+        </button>
+        <br><label><b>Endereço</b></label>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-    <ion-grid no-padding>
-      <ion-row>
-        <ion-col>
-          <button ion-item (click)='bookmarksSelected();'>
-            <ion-icon name="ios-bookmarks" color="primary" item-start></ion-icon>
-          </button>
-        </ion-col>
-        <ion-col>
-          <button ion-item (click)='medkitSelected();'>
-            <ion-icon name="ios-medkit" color="primary" item-start></ion-icon>
-          </button>
-        </ion-col>
-        <ion-col>
-          <button ion-item (click)='lensesSelected();'>
-            <ion-icon name="ios-eye" color="primary" item-start></ion-icon>
-          </button>
-        </ion-col>
-        <ion-col>
-          <button ion-item (click)='mapSelected();'>
-            <ion-icon name="ios-map" color="primary" item-start></ion-icon>
-          </button>
-        </ion-col>
-      </ion-row>
-
-      <ion-row class="linha-textos" padding-bottom>
-        <ion-col><ion-badge>Agendar</ion-badge></ion-col>
-        <ion-col><ion-badge>Emergência</ion-badge></ion-col>
-        <ion-col><ion-badge>Lentes</ion-badge></ion-col>
-        <ion-col><ion-badge>Endereço</ion-badge></ion-col>
-      </ion-row>
-
-    </ion-grid>
-
-  </ion-card>
- 
 </ion-content>

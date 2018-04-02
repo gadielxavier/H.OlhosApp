@@ -21,15 +21,23 @@ export class HomePage {
   }
 
   medkitSelected(){
-    this.navCtrl.push(EmergencyPage);
+    this.navCtrl.push('EmergencyPage');
   }
 
   mapSelected(){
-    this.navCtrl.push(DetailPage);
+    this.navCtrl.push('DetailPage');
   }
 
-  lensesSelected(){
+  eyeSelected(){
     this.navCtrl.push(ContactPage);
+  }
+
+  contactsSelected(){
+    this.navCtrl.push('StaffPage');
+  }
+
+  helpSelected(){
+    this.navCtrl.push('QuestionsPage');
   }
 
 }

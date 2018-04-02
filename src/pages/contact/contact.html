@@ -38,35 +38,23 @@
       <button ion-button color="primary" block>Encomendar</button>
     </div>
 
-    <!-- 
+    <div class="butao-circular">
+      <ion-grid>
+        <ion-row justify-content-center>
+          <ion-col text-center>
+           <button ion-button icon-only large round outline color="light" (click)=' whatsappSelected();'>
+            <ion-icon name="logo-whatsapp"></ion-icon>
+          </button>
+        </ion-col>
+      </ion-row>
 
-    <ion-list>
-      <ion-item>
-        <button ion-item (click)='whatsappSelected();'   color="light">
-          <ion-icon name='logo-whatsapp' item-start></ion-icon>
-          <h2>Entre em contato</h2>
-          <p>Equipe de lente de contato</p>
-        </button>
-      </ion-item>
-    </ion-list>
-
-    -->
-
-    <ion-grid>
-    <ion-row justify-content-center>
-      <ion-col text-center>
-         <button ion-button icon-only large round outline color="light" (click)=' whatsappSelected();'>
-          <ion-icon name="logo-whatsapp"></ion-icon>
-        </button>
-      </ion-col>
-    </ion-row>
-
-    <ion-row justify-content-center>
-      <ion-col text-center>
-        <p ion-text color="light">Entre em contato com a<br>nossa equipe de lentes de contato</p>
-      </ion-col>
-    </ion-row>
-  </ion-grid>
+      <ion-row justify-content-center>
+        <ion-col text-center>
+          <p ion-text color="light">Entre em contato com a<br>nossa equipe de lentes de contato</p>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </div>
 
 
-  </ion-content>
+</ion-content>

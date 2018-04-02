@@ -1,11 +1,10 @@
 page-home {
-  .toolbar-background {
+
+  .tutorial-page{
+
     background: #fff;
     border-color: transparent;
-  }
 
-  
-  .card {
     img{
       max-height: 50%;
       max-width: 60%;
@@ -13,49 +12,18 @@ page-home {
       margin-right: auto;
     }
 
+
     ion-icon {
-      font-size: 50px;
+      font-size: 30px;
     }
 
-    ion-row {
-      height: 100%;
-      flex-wrap: wrap;
+    label{
+      color: #488aff;
     }
 
-    ion-col {
-      flex: 0 0 25%;
-      max-width: 25%;
-      text-align: center;
-      padding: 10px 5px;
-    }
-  }
-
-
-  b {
-    font-weight: 500;
-  }
-
-  p {
-    padding: 0 40px;
-    font-size: 14px;
-    line-height: 1.5;
-    color: #60646B;
-  }
-
-  .linha-textos{
-    align-items: center;
-
-    ion-badge{
-      font-size: 11px;
-      margin-left: auto;
-      margin-right: auto;
-    }
-
-    ion-col {
-      flex: 0 0 25%;
-      max-width: 25%;
-      text-align: center;
-      padding: 10px 5px;
+    button{
+      width: 50px;
+      height: 50px; 
     }
   }
 
