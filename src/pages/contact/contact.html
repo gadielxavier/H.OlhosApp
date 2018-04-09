@@ -27,15 +27,15 @@
       <ion-item color="dark">
         <ion-label>Duração</ion-label>
         <ion-select [(ngModel)]="duracao">
-          <ion-option value="nes">Diária</ion-option>
-          <ion-option value="n64">Quinzenal</ion-option>
-          <ion-option value="ps">Anual</ion-option>
+          <ion-option value="Diária">Diária</ion-option>
+          <ion-option value="Quinzenal">Quinzenal</ion-option>
+          <ion-option value="Anual">Anual</ion-option>
         </ion-select>
       </ion-item>
     </ion-list>
 
     <div padding color="dark">
-      <button ion-button color="primary" block>Encomendar</button>
+      <button ion-button color="primary" block (click)=' encomendarSelected();'>Encomendar</button>
     </div>
 
     <div class="butao-circular">

@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { IonicPage, NavController, NavParams } from 'ionic-angular';
+import { LaunchNavigator, LaunchNavigatorOptions } from '@ionic-native/launch-navigator';
 
 /**
  * Generated class for the DetailPage page.
@@ -15,11 +16,14 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
 })
 export class DetailPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
+  constructor(public navCtrl: NavController, public navParams: NavParams,
+  	private launchNavigator: LaunchNavigator) {
   }
 
-  mapSelected(){
-  	window.open('geo:-12.256983,-38.941197');
+
+  navlocation(){
+  	this.launchNavigator.navigate([-12.256983,-38.941197]);
   }
+   
 
 }
