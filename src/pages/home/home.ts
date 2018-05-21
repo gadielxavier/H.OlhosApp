@@ -1,10 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
-import { DetailPage } from '../detail/detail';
 import { AboutPage } from '../about/about';
 import { ContactPage } from '../contact/contact';
-import { EmergencyPage } from '../emergency/emergency';
-
 
 @Component({
   selector: 'page-home',

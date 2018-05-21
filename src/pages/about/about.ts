@@ -1,5 +1,4 @@
 import { Component } from '@angular/core';
-import { NavController } from 'ionic-angular';
 import { AlertController } from 'ionic-angular';
 
 @Component({
@@ -8,8 +7,14 @@ import { AlertController } from 'ionic-angular';
 })
 export class AboutPage {
 
+	urlEncodeText: String;
+	nome: String;
+	telefone: String;
+	email: String;
+	idade: String;
+
 	public event = {
-		month: '2018-02-19',
+		month: '19-02-2018',
 		timeStarts: '08:00'
 	}
 
@@ -24,6 +29,15 @@ export class AboutPage {
 			buttons: ['OK']
 		});
 		alert.present();
+	}
+
+	agendarSelected(){
+		this.urlEncodeText = "Olá, gostaria de agendar uma consulta. Me chamo " + this.nome +
+		" meu telefone é " + this.telefone +
+		" minha idade é " + this.idade +
+		". Teria disponibilidade para" + this.event.month +
+		" no horário " + this.event.timeStarts + "?";
+		window.open('https://api.whatsapp.com/send?phone=15551234567&text=' + this.urlEncodeText );
 	}
 
 }

@@ -16,36 +16,37 @@
   <ion-list>
 
     <ion-item>
-      <ion-input type="text" placeholder="Nome"></ion-input>
+      <ion-input [(ngModel)]="nome" type="text" placeholder="Nome"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-input type="tel" placeholder="Telefone"></ion-input>
+      <ion-input [(ngModel)]="telefone" type="tel" placeholder="Telefone"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-input type="email" placeholder="Email"></ion-input>
+      <ion-input [(ngModel)]="email" type="email" placeholder="Email"></ion-input>
     </ion-item>
 
     <ion-item>
-      <ion-input type="number" placeholder="Idade"></ion-input>
+      <ion-input [(ngModel)]="idade" type="number" placeholder="Idade"></ion-input>
     </ion-item>
 
     <ion-item>
       <ion-label>Data</ion-label>
-      <ion-datetime displayFormat="DD/MM/YYYY" min="2018" max="2020-10-31" [(ngModel)]="event.month">
+      <ion-datetime displayFormat="DD/MM/YYYY" min="2018" cancelText="Cancelar" doneText="OK" max="2030-10-31" [(ngModel)]="event.month">
       </ion-datetime>
     </ion-item>
 
     <ion-item>
       <ion-label>Horário</ion-label>
-      <ion-datetime displayFormat="HH:mm " pickerFormat="HH:mm" hourValues="7,8,9,10,11,14,15,16,17" minuteValues="0,15,30,45" [(ngModel)]="event.timeStarts"></ion-datetime>
+        <ion-datetime cancelText="Cancelar" doneText="OK" displayFormat="HH:mm " pickerFormat="HH:mm" hourValues="7,8,9,10,11,14,15,16,17" minuteValues="0,15,30,45" [(ngModel)]="event.timeStarts">
+        </ion-datetime>
     </ion-item>
 
   </ion-list>
 
   <div padding>
-    <button ion-button color="primary" block (click)=' showAlert();'> 
+    <button ion-button color="primary" block (click)=' agendarSelected();'> 
       Agendar
     </button>
   </div>

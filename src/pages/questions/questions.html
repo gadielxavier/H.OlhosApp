@@ -15,11 +15,17 @@
 
 <ion-content padding>
 
+
+  <ion-card padding>
+    Envie sua dúvida e 
+    entraremos em contato para respondela.
+  </ion-card>
+
 	<ion-item>
-		<ion-input type="text" placeholder="Digite aqui sua Dúvida"></ion-input>
+		<ion-input [(ngModel)]="textQuestion" type="text" placeholder="Digite aqui sua Dúvida"></ion-input>
 	</ion-item>
 
-	<button ion-button color="primary" block > 
+	<button ion-button color="primary" block (click)=' enviarSelected();'> 
 		Enviar
 	</button>
 

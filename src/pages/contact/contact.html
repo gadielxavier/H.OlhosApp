@@ -18,7 +18,7 @@
     <ion-list>
       <ion-item color="dark">
         <ion-label>Lentes</ion-label>
-        <ion-select [(ngModel)]="lentes" cancelText="Cancelar" alert-input-placeholder-color="dark">
+        <ion-select [(ngModel)]="lentes" cancelText="Cancelar">
           <ion-option value="nes">NES</ion-option>
           <ion-option value="n64">Nintendo64</ion-option>
           <ion-option value="ps">PlayStation</ion-option>
@@ -30,7 +30,7 @@
 
       <ion-item color="dark">
         <ion-label>Duração</ion-label>
-        <ion-select [(ngModel)]="duracao">
+        <ion-select [(ngModel)]="duracao" cancelText="Cancelar">
           <ion-option value="Diária">Diária</ion-option>
           <ion-option value="Quinzenal">Quinzenal</ion-option>
           <ion-option value="Anual">Anual</ion-option>
@@ -42,7 +42,7 @@
       <button ion-button color="primary" block (click)=' encomendarSelected();'>Encomendar</button>
     </div>
 
-    <div class="butao-circular">
+    <div class="botao-circular">
       <ion-grid>
         <ion-row justify-content-center>
           <ion-col text-center>

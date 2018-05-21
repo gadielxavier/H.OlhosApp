@@ -8,18 +8,25 @@ import { IonicPage, NavController, NavParams } from 'ionic-angular';
  * Ionic pages and navigation.
  */
 
-@IonicPage()
-@Component({
-  selector: 'page-questions',
-  templateUrl: 'questions.html',
-})
-export class QuestionsPage {
+ @IonicPage()
+ @Component({
+ 	selector: 'page-questions',
+ 	templateUrl: 'questions.html',
+ })
+ export class QuestionsPage {
 
-  constructor(public navCtrl: NavController, public navParams: NavParams) {
-  }
+ 	textQuestion: String;
 
-  ionViewDidLoad() {
-    console.log('ionViewDidLoad QuestionsPage');
-  }
+ 	constructor(public navCtrl: NavController, public navParams: NavParams) {
+ 	}
 
-}
+ 	ionViewDidLoad() {
+ 		console.log('ionViewDidLoad QuestionsPage');
+ 	}
+
+ 	enviarSelected(){
+		window.open('https://api.whatsapp.com/send?phone=15551234567&text=' + this.textQuestion );
+	}
+
+
+ }
